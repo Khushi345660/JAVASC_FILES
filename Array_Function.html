@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array and Function</title>
+</head>
+
+<body>
+
+    <h1>Array and Function Example</h1>
+
+    <p id="result"></p>
+
+    <script>
+
+        let numbers = [10, 20, 30, 40, 50];
+
+        function calculateSum() {
+
+            let sum = 0;
+
+            for (let i = 0; i < numbers.length; i++) {
+                sum = sum + numbers[i];
+            }
+
+            return sum;
+        }
+
+        document.getElementById("result").innerHTML =
+            "Array: " + numbers + "<br>" +
+            "Sum: " + calculateSum();
+
+    </script>
+
+</body>
+</html>
